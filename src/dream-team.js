@@ -5,8 +5,6 @@ module.exports = function createDreamTeam(members) {
     return false;
   }
 
-  //return members.map(e => typeof e === 'string' ? e.trim().toUpperCase()[0] : '').sort().join('');
-
   return members
     .filter(x => typeof x === 'string')
     .map(x => x.trim().toUpperCase()[0])
